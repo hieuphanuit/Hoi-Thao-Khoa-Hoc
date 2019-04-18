@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => ['admin.auth']], function () {
+    Route::get('/admin/nguoi-thuyet-trinh', 'AdminDashBoardController@index_nguoi_thuyet_trinh')->name('admin.nguoi_thuyet_trinh');
+    Route::get('/dashboard', function () {
+        return view('DashBoard.master');
+    });
+});
