@@ -304,9 +304,8 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Các Trang</li>
         <li class="nav-item" data-page="home"><a href="{{url('home')}}"><i class="fa fa-circle-o text-red"></i> <span>Home</span></a></li>
-        <li class="nav-item" data-page="admin/hoi-nghi"><a href="{{url('admin/hoi-nghi')}}"><i class="fa fa-circle-o text-aqua"></i> <span>Hội Nghị</span></a></li>
-        <li class="nav-item" data-page="admin/bai-thuyet-trinh"><a href="{{url('admin/bai-thuyet-trinh')}}"><i class="fa fa-circle-o text-aqua"></i> <span>Bài Thuyết Trình</span></a></li>
-        <li class="nav-item" data-page="admin/nguoi-thuyet-trinh"><a href="{{url('admin/nguoi-thuyet-trinh')}}"><i class="fa fa-circle-o text-yellow"></i> <span>Người Thuyết Trình</span></a></li>
+        <li class="nav-item" data-page="nguoi-thuyet-trinh/hoi-nghi"><a href="{{url('nguoi-thuyet-trinh/hoi-nghi')}}"><i class="fa fa-circle-o text-aqua"></i> <span>Hội Nghị</span></a></li>
+        <li class="nav-item" data-page="nguoi-thuyet-trinh/bai-thuyet-trinh"><a href="{{url('nguoi-thuyet-trinh/bai-thuyet-trinh')}}"><i class="fa fa-circle-o text-aqua"></i> <span>Bài Thuyết Trình</span></a></li>
       </ul>
     </section>
 
