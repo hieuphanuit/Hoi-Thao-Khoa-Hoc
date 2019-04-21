@@ -1,0 +1,47 @@
+header .header-menu{
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:150px;
+	text-align:center;
+}
+
+.section1{
+	text-align:center;
+}
+.section1 .info_1{
+	margin-bottom:30px;
+}
+.section1 .info_2{
+	margin-bottom:50px;
+}
+.download_pappers_button,.submit_pappers_button {
+	font-size:20px;
+	color:  #30A4F2;
+	padding:10px;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	border: 2px solid #30A4F2;
+}
+.section2, .section3, .section4, .section5 {
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.section2 h1,.section4 h1, .section5 h1 {
+	text-align:center;
+	padding-bottom:40px;
+}
+.section2 table, th, td {
+  border: 1px solid #EEEEEE;
+  padding-left:15px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.section3 .topics_header{
+	text-align:center;
+	padding-bottom:40px;
+}
+.cover {
+	color:white;
+	background-color:#18466B;
+	padding:15px;
+}
