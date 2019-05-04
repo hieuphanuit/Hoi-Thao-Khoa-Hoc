@@ -5,3 +5,18 @@ hr{
 	font-size: 30px;
 	font-weight: bold;
 }
+.hoinghi_img {
+
+  background:url(/uploads/master_background.png);
+  background-repeat: no-repeat;
+ background-size: cover;
+}
+.list_hoinghi {
+	color:white;
+	font-size: 25px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.body_hoinghi {
+	margin-top:50px;
+}
