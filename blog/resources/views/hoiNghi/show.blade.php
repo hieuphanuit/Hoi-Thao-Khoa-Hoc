@@ -79,6 +79,7 @@
                 </tr>
             </thead>
             <tbody>
+			
             @foreach ($baiThuyetTrinhs as $baiThuyetTrinh)
                 <tr>
                 <td>{{$baiThuyetTrinh->tenBaiThuyetTrinh}}</td>

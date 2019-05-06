@@ -19,7 +19,7 @@
     }
     .name{
         padding-top: 100px;
-        color: skyblue;
+    
         font-size: 3em;
         
         text-transform: uppercase;
@@ -80,21 +80,22 @@ $i = 0
 		@endforeach
 @endsection
 @section('content_1')
-		<div style="background-color: #18478B; padding:100px; text-align:center; margin-bottom:20px;">
-				<h1 style="font-size:30px;">H2</h1>
+		<a href="{{url('hoi-nghi',$hoiNghi->id)}}">
+			<div style="background-color: #3D9970; padding:100px; text-align:center; margin-bottom:20px;">
+				<h1 class="name text-shadow" style="font-size:30px;">H2</h1>
 				<h1 style="font-size:30px; color:white;"> Các hội nghị năm 2019 </h1>
 			</div>
+		</a>
 		@foreach($HoiNghis as $hoiNghi)
 		<a href="{{url('hoi-nghi',$hoiNghi->id)}}">
 			<div class="baiThuyetTrinhImage hoi-nghi-block" style='background: #ffffff url("{{url('/images',$hoiNghi->hinh)}}") no-repeat center center; background-size: cover;'>
 				<div class="overlay">
 					<div>
-						<a class="name text-shadow" style="font-size:20px;">{{$hoiNghi->tenHoiNghi}}</a>
+						<p class="name text-shadow" style="font-size:20px;">{{$hoiNghi->tenHoiNghi}}</p>
 						<p class="text text-shadow" style="font-size:15px;">
 						{{$hoiNghi->thoiGianBatDau}} -> {{$hoiNghi->thoiGianKetThuc}} <br>
 						Địa Điểm: {{$hoiNghi->diaDiem}}<br>
 						<br>
-						{{$hoiNghi->moTa}}
 						</p>
 					</div>
 				</div>
@@ -116,14 +117,13 @@ $i = 0
 			<div class="overlay">
 					<div>
 						<h1 class="name" style="font-size:50px; color: black">{{$hoiNghi->tenHoiNghi}}</h1>
-						<p>
-						<a style="font-size:20px; color: black">Thời gian bắt đầu: {{$hoiNghi->thoiGianBatDau}} -> {{$hoiNghi->thoiGianKetThuc}} </a> <br>
-						<a style="font-size:20px; color: black"> Địa Điểm: {{$hoiNghi->diaDiem}} </a><br>
+						<p style="font-size:20px; color: black">Thời gian bắt đầu: {{$hoiNghi->thoiGianBatDau}} -> {{$hoiNghi->thoiGianKetThuc}} </p> <br>
+						<p style="font-size:20px; color: black"> Địa Điểm: {{$hoiNghi->diaDiem}} </p><br>
 						<br>
-						<a style="font-size:20px; color: black">Mô tả: {{$hoiNghi->moTa}}</a><br>
-						<a style="font-size:20px; color: black">Số lượng tối đa: {{$hoiNghi->soLuongToiDa}}</a><br>
-						<a style="font-size:20px; color: black">Trạng thái: {{$hoiNghi->trangThai}}</a><br>
-						<a style="font-size:20px; color: black">Nội dung: {{$hoiNghi->noiDung}}</a><br>
+						<p style="font-size:20px; color: black">Mô tả: {{$hoiNghi->moTa}}</p><br>
+						<p style="font-size:20px; color: black">Số lượng tối đa: {{$hoiNghi->soLuongToiDa}}</p><br>
+						<p style="font-size:20px; color: black">Trạng thái: {{$hoiNghi->trangThai}}</p><br>
+						<p style="font-size:20px; color: black">Nội dung: {!!$hoiNghi->noiDung!!}</p><br>
 						</p>
 					</div>
 				</div>

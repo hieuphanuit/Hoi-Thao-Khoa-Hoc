@@ -22,7 +22,7 @@
   @show
 </head>
 <body class="">
-	<header style="text-align: center; background-color: #18478B; padding:20px; position: relative;">
+	<header style="text-align: center; background-color: #3D9970; padding:20px; position: relative;">
 		<div class="row">
 			<div class="col-md-6">
 			<h2><img style= "margin-right:20px;"src="{{ asset('uploads/logo.png') }}" width="50"><a style="color: white; text-transform: uppercase; font-weight: bold" href="{{url('/')}}">Hội Nghị Khoa Học</a><h2>
@@ -62,7 +62,7 @@
 	</div>
 </div>
 
-<footer class="main-footer"style="text-align: center; background-color: #18478B; padding:20px; position: relative;">
+<footer class="main-footer"style="text-align: center; background-color: #3D9970; padding:20px; position: relative;">
 		<div class="cover">
 			<div class="container">
 				<div class="row">
