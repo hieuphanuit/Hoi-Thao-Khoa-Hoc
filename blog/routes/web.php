@@ -51,4 +51,4 @@ Route::GET('bai-thuyet-trinh/{bai_thuyet_trinh}','BaiThuyetTrinhController@show'
 Route::GET('hoi-nghi/{hoi_nghi}','HoiNghiController@show');
 
 Route::POST('dang-ky-hoi-nghi','DangKyHoiNghiController@store');
-
+Route::post('/search', 'SearchController@show');

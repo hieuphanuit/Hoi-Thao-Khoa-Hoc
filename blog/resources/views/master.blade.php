@@ -31,6 +31,19 @@
 				<h2 style="padding-top:10px;"><a style="color: white; text-transform: uppercase; font-weight: bold" href="{{url('/login')}}">Là người thuyết trình?</a><h2>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6" id="search-menu">
+						<form action="{{url('search')}}" id="search-form" method="POST">
+							<input type="text" placeholder="Tìm kiếm hội nghị" id="timkiemhoinghi" name="timkiemhoinghi" style="height: 40px; width: 500px;"/>
+							<button class="btn" id="timkiemhoinghi_button" style="height: 40px; width: 100px;"><b>Tìm kiếm</b></button>
+							{!! csrf_field() !!}
+						</form>
+			</div>
+			<div class="col-md-3">
+			</div>
+		</div>
 	  </header>
 	<div class="hoinghi_img">
 	<div class="container">
