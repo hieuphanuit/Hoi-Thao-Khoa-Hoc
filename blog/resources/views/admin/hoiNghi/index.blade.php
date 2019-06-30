@@ -22,6 +22,7 @@
                 <th>Trạng Thái</th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -35,6 +36,9 @@
                 <td>{{$hoiNghi->trangThai}}</td>
                 <td>
                     <a href="{{action('HoiNghiController@edit', $hoiNghi->id)}}" class="btn btn-warning">Sửa</a>
+                </td>
+                <td>
+                    <a href="{{action('HoiNghiController@profile', $hoiNghi->id)}}" class="btn btn-success">Thông tin</a>
                 </td>
                 <td>
                     <form action="{{action('HoiNghiController@destroy', $hoiNghi->id)}}" method="POST"

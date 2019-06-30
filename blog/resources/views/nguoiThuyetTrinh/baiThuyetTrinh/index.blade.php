@@ -27,7 +27,7 @@
                 <td>{{$baiThuyetTrinh->moTa}}</td>
                 <td>{{$baiThuyetTrinh->trangThai}}</td>
                 <td>
-                    <a href="{{url('nguoi-thuyet-trinh/hoi-nghi',$baiThuyetTrinh->id)}}" class="btn btn-warning">Xem</a>
+                    <a href="{{url('bai-thuyet-trinh',$baiThuyetTrinh->id)}}" class="btn btn-warning">Xem</a>
                 </td>
             </tr>
             @endforeach

@@ -24,8 +24,9 @@ Route::group(['middleware' => ['admin.auth']], function () {
     Route::GET('admin/hoi-nghi/create','HoiNghiController@create');
     Route::GET('admin/hoi-nghi','HoiNghiController@index');
    
-    Route::PUT('admin/hoi-nghi/{hoi_nghi}','HoiNghiController@update');
+    Route::POST('admin/hoi-nghi/{hoi_nghi}','HoiNghiController@update');
     Route::GET('admin/hoi-nghi/{hoi_nghi}','HoiNghiController@show');
+    Route::GET('admin/hoi-nghi/{hoi_nghi}','HoiNghiController@profile');
     Route::DELETE('admin/hoi-nghi/{hoi_nghi}','HoiNghiController@destroy');
     Route::GET('admin/hoi-nghi/{hoi_nghi}/edit','HoiNghiController@edit');
 
@@ -33,7 +34,7 @@ Route::group(['middleware' => ['admin.auth']], function () {
 
     Route::POST('admin/bai-thuyet-trinh-chap-nhan/{bai_thuyet_trinh}','BaiThuyetTrinhController@chapNhan');
     Route::POST('admin/bai-thuyet-trinh-huy-chap-nhan/{bai_thuyet_trinh}','BaiThuyetTrinhController@huyChapNhan');
-
+    Route::GET('admin/nguoi-thuyet-trinh/{nguoi_thuyet_trinh}','UserController@profile');
 });
 
 Route::group(['middleware' => ['nguoiThuyetTrinh.auth']], function () {

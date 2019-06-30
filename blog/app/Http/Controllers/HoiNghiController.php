@@ -87,6 +87,10 @@ class HoiNghiController extends Controller
     public function edit($id)
     {
         //
+        $hoiNghi = HoiNghi::find($id);
+        //if (!$HoiNghi)
+        //    return redirect('/kho')->withErrors('Nguyên liệu không tồn tại');
+        return view('admin.hoiNghi.edit', ['hoiNghi' => $hoiNghi]);
     }
 
     /**
@@ -99,6 +103,19 @@ class HoiNghiController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $hoiNghi = HoiNghi::where('id', '=', $id)->first();
+
+        $hoiNghi->tenHoiNghi=$request->get('tenHoiNghi');;
+        $hoiNghi->diaDiem=$request->get('diaDiem');
+        $thoiGian = explode(" - ",$request->get('thoiGian'));
+        $hoiNghi->thoiGianBatDau=$thoiGian[0];
+        $hoiNghi->thoiGianKetThuc=$thoiGian[1];
+        $hoiNghi->moTa=$request->get('moTa');
+        $hoiNghi->noiDung=$request->get('noiDung');
+        $hoiNghi->soLuongToiDa=$request->get('soLuongToiDa');
+        $hoiNghi->trangThai=$request->get('trangThai');
+        $hoiNghi->save();
+        return redirect()->back()->with('message', 'Cập nhập thành công');
     }
 
     /**
@@ -131,6 +148,14 @@ class HoiNghiController extends Controller
         }
         $hoiNghi = \App\HoiNghi::find($id);
         return view('nguoiThuyetTrinh.hoiNghi.show', compact('hoiNghi','baiThuyetTrinhs'));
+    }
+    public function profile($id)
+    {
+       //
+       $hoiNghi = HoiNghi::find($id);
+       //if (!$HoiNghi)
+       //    return redirect('/kho')->withErrors('Nguyên liệu không tồn tại');
+       return view('admin.hoiNghi.profile', ['hoiNghi' => $hoiNghi]);
     }
     
 }

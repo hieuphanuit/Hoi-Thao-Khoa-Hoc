@@ -26,7 +26,7 @@
                 <td>{{$nguoi_thuyet_trinh->name}}</td>
                 <td>{{$nguoi_thuyet_trinh->email}}</td>
                 <td>
-                    <a href="#" class="btn btn-warning">Thông tin</a>
+                    <a href="{{action('UserController@profile', $nguoi_thuyet_trinh->id)}}" class="btn btn-warning">Thông tin</a>
                 </td>
             </tr>
             @endforeach
